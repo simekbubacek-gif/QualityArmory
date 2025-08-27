@@ -35,7 +35,7 @@ These are all the fields used by a gun with their description:
   * **`sneakModifier`**: If `true`, sway is affected by the global `swayModifier_Sneak` from `config.yml` when the player is sneaking.
   * **`moveModifier`**: If `true`, sway is affected by the global `swayModifier_Walk` from `config.yml` when the player is walking.
   * **`runModifier`**: If `true`, sway is affected by the global `swayModifier_Run` from `config.yml` when the player is sprinting.
-* **`firerate`**: For automatic weapons (`isAutomatic: true`), this controls how many shots are fired per "burst" or firing cycle. Often kept at `1`. The actual speed is controlled more by `delayForShoot`.
+* **`firerate`**: For automatic weapons (`isAutomatic: false`), this controls how many shots are fired per "burst" or firing cycle. Often kept at `1`. The actual speed is controlled more by `delayForShoot`.
 * **`delayForReload`**: The time in seconds it takes to reload the weapon.
 * **`delayForShoot`**: The minimum time in seconds between consecutive shots (fire rate limiter). Lower values mean faster firing.
 * **`bullets-per-shot`**: The number of bullets consumed and fired with each shot. Useful for shotguns (e.g., `8`), but each projectile calculates damage independently.
